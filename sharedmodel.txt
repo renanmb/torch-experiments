@@ -1,0 +1,36 @@
+--------------------------------------------------
+==================================================
+Observations for Agent_id agent Shared model (roles): ['policy', 'value']
+==================================================
+
+Box(-inf, inf, (4,), float32)
+--------------------------------------------------
+{'agent': {'policy': 4}}
+4
+[INFO] Loading model checkpoint from: /home/goat/Documents/GitHub/renanmb/IsaacLab/logs/skrl/cartpole_direct/2025-05-20_16-59-31_ppo_torch/checkpoints/best_agent.pt
+[INFO] Print model DICT: SharedModel(
+  (net_container): Sequential(
+    (0): Linear(in_features=4, out_features=32, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=32, out_features=32, bias=True)
+    (3): ELU(alpha=1.0)
+  )
+  (policy_layer): Linear(in_features=32, out_features=1, bias=True)
+  (value_layer): Linear(in_features=32, out_features=1, bias=True)
+)
+False
+printing the self: _OnnxPolicyExporter(
+  (actor): SharedModel(
+    (net_container): Sequential(
+      (0): Linear(in_features=4, out_features=32, bias=True)
+      (1): ELU(alpha=1.0)
+      (2): Linear(in_features=32, out_features=32, bias=True)
+      (3): ELU(alpha=1.0)
+    )
+    (policy_layer): Linear(in_features=32, out_features=1, bias=True)
+    (value_layer): Linear(in_features=32, out_features=1, bias=True)
+  )
+  (normalizer): Identity()
+)
+Zeros from the net container:4
+tensor([[0., 0., 0., 0.]])
